@@ -1,6 +1,7 @@
 make virtualtest
 brew install allure
 rm -rf json_folder
+rm failed.txt
 
 # start first run
 behave -f allure_behave.formatter:AllureFormatter -o json_folder
