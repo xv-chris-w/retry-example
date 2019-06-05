@@ -16,4 +16,5 @@ while read fail_test_name; do
   behave -f allure_behave.formatter:AllureFormatter -o json_folder -n "$fail_test_name"
 done <failed.txt
 
+# after all the tests are done,  generate report
 allure serve json_folder
